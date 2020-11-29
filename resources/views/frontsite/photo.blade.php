@@ -1,0 +1,2 @@
+@extends('frontsite.layouts.master');
+
