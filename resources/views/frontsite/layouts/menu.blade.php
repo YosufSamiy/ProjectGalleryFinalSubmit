@@ -22,6 +22,29 @@
                 <li class="nav-item">
                     <a class="nav-link nav-link-4" href="{{route('frontsite.contact')}}">Contact</a>
                 </li>
+                @guest()
+                <li class="nav-item">
+                    <a class="nav-link nav-link-4" href="{{route('dashboard.dashboard.layout.admin')}}">login</a>
+                </li>
+                @endguest
+
+                @auth()
+
+                    <li class="nav-item">
+
+
+                        <a class="nav-link nav-link-4" href="{{route('dashboard.dashboard.layout.admin')}}">Dashboard</a>
+
+                    </li>
+                    <form  action="{{route('logout')}}" method="post">
+                        @csrf
+
+                    <li class="nav-item">
+                        <button  class="btn btn-link" type="submit" name="submit" class="nav-link nav-link-4" href="{{route('logout')}}">logout</button>
+                    </li>
+                    </form>
+
+                @endauth
             </ul>
         </div>
     </div>

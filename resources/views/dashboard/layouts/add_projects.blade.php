@@ -1,19 +1,19 @@
+@extends('dashboard.layouts.header')
 
 
 <style>
 
-    .blog-section{
+    .blog-section {
 
-        margin-left:-200px;
+        margin-left: -200px;
     }
 
 
-    .imgs{
+    .imgs {
         width: 100px;
     }
 
-    .blog-section
-    {
+    .blog-section {
         margin-left: 30px;
 
     }
@@ -31,41 +31,33 @@
         <option value="audi">فيديو</option>
 
 
-
     </select>
     <br><br>
 
-    </form>
-
-
-
-
 
     <div class="">
-        <form method="POST" enctype="multipart/form-data">
+        <form method="POST"   ID="formImgInp" action="{{route('dashboard.layout.admin.create')}}" enctype="multipart/form-data" >
 
             <div class="form-group">
-                <input type="text" name="title" class="form-control" placeholder="اسم العمل "require>
+                <input type="text" name="title" class="form-control" placeholder="اسم العمل " require>
             </div>
 
-            <input class="form-control input-lg" type="file" name="fileToUpload" id="fileToUpload" class="btn btn-success" value="شو رايك ترفعلك
+            <input class="form-control input-lg" type="file" name="fileToUpload" id="fileToUpload"
+                   class="btn btn-success" value="شو رايك ترفعلك
 
-    صورة ">شو رايك ترفعلك صورة</form>
-            <br>
-            <h2>وصف العمل </h2>
-
-
-            <textarea placeholder="وصف المشروع" class="form-control input-lg" name="content" cols="20" rows="20" ></textarea>
-
-            <br>
-            <input type="submit" name="submit" class="btn btn-success" value="اديني ضغطة هان خلينا نرفع الصورة">
+    صورة ">شو رايك ترفعلك صورة
+        </form>
+        <br>
+        <h2>وصف العمل </h2>
 
 
+        <textarea placeholder="وصف المشروع" class="form-control input-lg" name="content" cols="20" rows="20"></textarea>
+
+        <br>
+        <input type="submit" name="submit" class="btn btn-success" value="اديني ضغطة هان خلينا نرفع الصورة">
 
 
-            <form>
+        <form>
     </div>
 </div>
-@extends('dashboard.layouts.header')
-
 

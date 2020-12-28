@@ -1,20 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact </title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="css/templatemo-style.css">
-    <!--
+@section('page-title')
+    Contact
+@endsection
+@include('frontsite.layouts.header')
 
-    TemplateMo 556 Catalog-Z
 
-    https://templatemo.com/tm-556-catalog-z
-
-    -->
-</head>
 <div class="container">
 
 <body>
@@ -35,27 +24,26 @@
     <div class="row tm-mb-50">
         <div class="col-lg-4 col-12 mb-5">
             <h2 class="tm-text-primary mb-5">Contact Page</h2>
-            <form id="contact-form" action="" method="POST" class="tm-contact-form mx-auto">
+            @include('dashboard.layouts.messages')
+
+            <form id="contact-form" action="{{route('sendcontact')}}" method="POST" class="tm-contact-form mx-auto">
+
+                @csrf
                 <div class="form-group">
-                    <input type="text" name="name" class="form-control rounded-0" placeholder="Name" required />
+                    <input type="text"   name="name" class="form-control rounded-0" placeholder="Name" required />
                 </div>
                 <div class="form-group">
                     <input type="email" name="email" class="form-control rounded-0" placeholder="Email" required />
                 </div>
                 <div class="form-group">
-                    <select class="form-control" id="contact-select" name="inquiry">
-                        <option value="-">Subject</option>
-                        <option value="sales">Sales &amp; Marketing</option>
-                        <option value="creative">Creative Design</option>
-                        <option value="uiux">UI / UX</option>
-                    </select>
+
                 </div>
                 <div class="form-group">
-                    <textarea rows="8" name="message" class="form-control rounded-0" placeholder="Message" required=></textarea>
+                    <textarea rows="8" name="description" class="form-control rounded-0" placeholder="Message" required=></textarea>
                 </div>
 
                 <div class="form-group tm-text-right">
-                    <button type="submit" class="btn btn-primary">Send</button>
+                    <button type="submit" class="btn btn-primary"  >Send</button>
                 </div>
             </form>
         </div>

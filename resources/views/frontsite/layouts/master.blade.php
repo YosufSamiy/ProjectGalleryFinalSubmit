@@ -1,20 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="css/templatemo-style.css">
-    <!--
+@section('page-title')
+    Photo
+@endsection
+@include('frontsite.layouts.header')
 
-    TemplateMo 556 Catalog-Z
-
-    https://templatemo.com/tm-556-catalog-z
-
-    -->
-</head>
 <div class="container">
 
 <body>
@@ -55,13 +43,16 @@
             </form>
         </div>
     </div>
+
     <div class="row tm-mb-90 tm-gallery">
+        @foreach($photo as $info)
 
         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+
             <figure class="effect-ming tm-video-item">
                 <img src="img/img-05.jpg" alt="Image" class="img-fluid">
                 <figcaption class="d-flex align-items-center justify-content-center">
-                    <h2>Morning</h2>
+                    <h2>{{$info->name}}}</h2>
                     <a href="photo-detail.html">View more</a>
                 </figcaption>
             </figure>
@@ -70,9 +61,14 @@
                 <span>12,460 views</span>
             </div>
         </div>
+        @endforeach
 
-        </div>
-    </div> <!-- row -->
+
+    </div>
+
+</div>
+
+<!-- row -->
     <div class="row tm-mb-90">
         <div class="col-12 d-flex justify-content-between align-items-center tm-paging-col">
             <a href="javascript:void(0);" class="btn btn-primary tm-btn-prev mb-2 disabled">Previous</a>

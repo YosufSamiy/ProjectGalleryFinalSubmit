@@ -3,7 +3,7 @@
         <div class="navbar-header">
             <ul class="nav navbar-nav">
                 <li class="nav-item mobile-menu hidden-md-up float-xs-left"><a class="nav-link nav-menu-main menu-toggle hidden-xs"><i class="icon-menu5 font-large-1"></i></a></li>
-                <li class="nav-item"><a href="{{route('dashboard.layout.admin')}}" class="navbar-brand nav-link"><img alt="branding logo" src="{{asset('app-assets/images/logo/robust-logo-light.png')}}" data-expand="{{asset('app-assets/images/logo/robust-logo-light.png')}}" data-collapse=app-assets/images/logo/robust-logo-small.png" class="brand-logo"></a></li>
+                <li class="nav-item"><a href="{{route('dashboard.dashboard.layout.admin')}}" class="navbar-brand nav-link"><img alt="branding logo" src="{{asset('app-assets/images/logo/robust-logo-light.png')}}" data-expand="{{asset('app-assets/images/logo/robust-logo-light.png')}}" data-collapse=app-assets/images/logo/robust-logo-small.png" class="brand-logo"></a></li>
                 <li class="nav-item hidden-md-up float-xs-right"><a data-toggle="collapse" data-target="#navbar-mobile" class="nav-link open-navbar-container"><i class="icon-ellipsis pe-2x icon-icon-rotate-right-right"></i></a></li>
             </ul>
         </div>
@@ -103,15 +103,26 @@
                                                 <time datetime="2015-06-11T18:29:20+08:00" class="media-meta text-muted">last month</time></small>
                                         </div>
                                     </div></a></li>
+
+
                             <li class="dropdown-menu-footer"><a href="javascript:void(0)" class="dropdown-item text-muted text-xs-center">Read all messages</a></li>
-                        </ul>
+                           </ul>
+
                     </li>
+                    <form  action="{{route('logout')}}" method="post">
+                        @csrf
+
                     <li class="dropdown dropdown-user nav-item"><a href="#" data-toggle="dropdown" class="dropdown-toggle nav-link dropdown-user-link"><span class="avatar avatar-online"><img src="{{asset('app-assets/images/portrait/small/avatar-s-1.png')}}" alt="avatar"><i></i></span><span class="user-name">  </span></a>
-                        <div class="dropdown-menu dropdown-menu-right"><a href="edit_profile.php" class="dropdown-item"><i class="icon-head"></i> تعديل البينات</a>
-                            <div class="dropdown-divider"></div><a href="logout.php" class="dropdown-item"><i class="icon-power3"></i>تسجيل الخروج</a>
-                        </div>
-                    </li>
+                                                     <div class="dropdown-menu dropdown-menu-right"><a href="edit_profile.php" class="dropdown-item"><i class="icon-head"></i> تعديل البينات</a>
+
+                             <div class="dropdown-divider"></div>
+                                                         <button type="submit" name="submit" class="dropdown-item"><i class="icon-power3"></i>تسجيل الخروج</button>
+                                                     </div>
+              </li>
+                    </form>
+
                 </ul>
+
             </div>
         </div>
     </div>
@@ -130,22 +141,36 @@
     <!-- / main menu header-->
     <!-- main menu content-->
     <div class="main-menu-content">
+        <br>
+        <div style="margin-right:30px">
+
         <ul id="main-menu-navigation" data-menu="menu-navigation" class="navigation navigation-main">
-            <li class=" nav-item"><i class="icon-home3"></i><span data-i18n="nav.dash.main" class="menu-title">لوحة التحكم</span></a>
+
+
+
+
+               <li class=" nav-item"><i class="icon-home3"></i><span data-i18n="nav.dash.main" class="menu-title">&nbsp;لوحة التحكم  </span></a>
                 <ul class="menu-content">
                     <li><a href="{{route('dashboard.layout.admin.users')}}" data-i18n="nav.dash.main" class="menu-item">المدراء</a></li>
-                    <li><a href="{{route('dashboard.layout.admin')}}" data-i18n="nav.dash.main" class="menu-item">رسائل الزوار</a></li>
+                    <li><a href="{{route('dashboard.contactshow')}}" data-i18n="nav.dash.main" class="menu-item">رسائل الزوار</a></li>
                 </ul>
 
-                <ul id="main-menu-navigation" data-menu="menu-navigation" class="navigation navigation-main">
+                   <ul id="main-menu-navigation" data-menu="menu-navigation" class="navigation navigation-main">
                     <li class=" nav-item"><i class="icon-folder-open"></i><span data-i18n="nav.dash.main" class="menu-title">الأعمال</span></a>
                         <ul class="menu-content">
-                            <li><a href="projects.php" data-i18n="nav.dash.main" class="menu-item">الاعمال السابقة</a></li>
-                            <li><a href="{{route('dashboard.layout.admin.create')}}" data-i18n="nav.dash.main" class="menu-item">اضافة عمل  جديد</a></li>
+{{--                            <li><a href="projects.php" data-i18n="nav.dash.main" class="menu-item">الاعمال السابقة</a></li>--}}
+                            <li><a href="{{route('dashboard.photo.index')}}" data-i18n="nav.dash.main" class="menu-item">ادارة الصور  </a></li>
+                            <li><a href="{{route('dashboard.photo.create')}}" data-i18n="nav.dash.main" class="menu-item">اضافة صورة  جديد</a></li>
+{{--                            <li><a href="{{route('dashboard.video.create')}}" data-i18n="nav.dash.main" class="menu-item">اضافة فيديو  جديد</a></li>--}}
+{{--                            <li><a href="{{route('dashboard.layout.admin.createVideo')}}" data-i18n="nav.dash.main" class="menu-item">اضافة فيديو  جديد</a></li>--}}
+{{--                            <li><a href="{{route('projectVideo')}}" data-i18n="nav.dash.main" class="menu-item">ادارة الفيديو  </a></li>--}}
+
                         </ul>
                 </ul>
 
         </ul>
+        </div>
+
     </div>
     <!-- /main menu content-->
     <!-- main menu footer-->

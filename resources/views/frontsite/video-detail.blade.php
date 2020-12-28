@@ -1,20 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalog-Z Video Detail Page</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="css/templatemo-style.css">
-    <!--
+@section('page-title')
+    Videos Show
+@endsection
+@include('frontsite.layouts.header')
 
-    TemplateMo 556 Catalog-Z
 
-    https://templatemo.com/tm-556-catalog-z
-
-    -->
-</head>
 <body>
 <!-- Page Loader -->
 <div id="loader-wrapper">
@@ -42,9 +31,9 @@
     </div>
     <div class="row tm-mb-90">
         <div class="col-xl-8 col-lg-7 col-md-6 col-sm-12">
-            <video autoplay muted loop controls id="tm-video">
-                <source src="video/hero.mp4" type="video/mp4">
-            </video>
+            <iframe width="1000" height="600"
+                    src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+            </iframe>
         </div>
         <div class="col-xl-4 col-lg-5 col-md-6 col-sm-12">
             <div class="tm-bg-gray tm-video-details">
@@ -87,11 +76,12 @@
             Related Videos
         </h2>
     </div>
+
     <div class="row mb-3 tm-gallery">
         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
             <figure class="effect-ming tm-video-item">
-                <img src="img/img-01.jpg" alt="Image" class="img-fluid">
-                <figcaption class="d-flex align-items-center justify-content-center">
+                <iframe height="300" src="https://www.youtube.com/embed/tgbNymZ7vqY?">
+                </iframe>                <figcaption class="d-flex align-items-center justify-content-center">
                     <h2>Hangers</h2>
                     <a href="#">View more</a>
                 </figcaption>
@@ -101,97 +91,7 @@
                 <span>12,460 views</span>
             </div>
         </div>
-        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-            <figure class="effect-ming tm-video-item">
-                <img src="img/img-02.jpg" alt="Image" class="img-fluid">
-                <figcaption class="d-flex align-items-center justify-content-center">
-                    <h2>Perfumes</h2>
-                    <a href="#">View more</a>
-                </figcaption>
-            </figure>
-            <div class="d-flex justify-content-between tm-text-gray">
-                <span class="tm-text-gray-light">18 Oct 2020</span>
-                <span>11,402 views</span>
-            </div>
-        </div>
-        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-            <figure class="effect-ming tm-video-item">
-                <img src="img/img-03.jpg" alt="Image" class="img-fluid">
-                <figcaption class="d-flex align-items-center justify-content-center">
-                    <h2>Clocks</h2>
-                    <a href="#">View more</a>
-                </figcaption>
-            </figure>
-            <div class="d-flex justify-content-between tm-text-gray">
-                <span class="tm-text-gray-light">16 Oct 2020</span>
-                <span>9,906 views</span>
-            </div>
-        </div>
-        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-            <figure class="effect-ming tm-video-item">
-                <img src="img/img-04.jpg" alt="Image" class="img-fluid">
-                <figcaption class="d-flex align-items-center justify-content-center">
-                    <h2>Plants</h2>
-                    <a href="#">View more</a>
-                </figcaption>
-            </figure>
-            <div class="d-flex justify-content-between tm-text-gray">
-                <span class="tm-text-gray-light">12 Oct 2020</span>
-                <span>16,100 views</span>
-            </div>
-        </div>
-        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-            <figure class="effect-ming tm-video-item">
-                <img src="img/img-05.jpg" alt="Image" class="img-fluid">
-                <figcaption class="d-flex align-items-center justify-content-center">
-                    <h2>Morning</h2>
-                    <a href="#">View more</a>
-                </figcaption>
-            </figure>
-            <div class="d-flex justify-content-between tm-text-gray">
-                <span class="tm-text-gray-light">24 Sep 2020</span>
-                <span>16,008 views</span>
-            </div>
-        </div>
-        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-            <figure class="effect-ming tm-video-item">
-                <img src="img/img-06.jpg" alt="Image" class="img-fluid">
-                <figcaption class="d-flex align-items-center justify-content-center">
-                    <h2>Pinky</h2>
-                    <a href="#">View more</a>
-                </figcaption>
-            </figure>
-            <div class="d-flex justify-content-between tm-text-gray">
-                <span class="tm-text-gray-light">21 Sep 2020</span>
-                <span>12,860 views</span>
-            </div>
-        </div>
-        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-            <figure class="effect-ming tm-video-item">
-                <img src="img/img-07.jpg" alt="Image" class="img-fluid">
-                <figcaption class="d-flex align-items-center justify-content-center">
-                    <h2>Bus</h2>
-                    <a href="#">View more</a>
-                </figcaption>
-            </figure>
-            <div class="d-flex justify-content-between tm-text-gray">
-                <span class="tm-text-gray-light">18 Sep 2020</span>
-                <span>10,900 views</span>
-            </div>
-        </div>
-        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-            <figure class="effect-ming tm-video-item">
-                <img src="img/img-08.jpg" alt="Image" class="img-fluid">
-                <figcaption class="d-flex align-items-center justify-content-center">
-                    <h2>New York</h2>
-                    <a href="#">View more</a>
-                </figcaption>
-            </figure>
-            <div class="d-flex justify-content-between tm-text-gray">
-                <span class="tm-text-gray-light">9 Sep 2020</span>
-                <span>11,300 views</span>
-            </div>
-        </div>
+
     </div> <!-- row -->
 </div> <!-- container-fluid, tm-container-content -->
 

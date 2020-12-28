@@ -1,20 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Videos</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="css/templatemo-style.css">
-    <!--
+@section('page-title')
+    Videos
+@endsection
 
-    TemplateMo 556 Catalog-Z
+@include('frontsite.layouts.header')
 
-    https://templatemo.com/tm-556-catalog-z
-
-    -->
-</head>
 <div class="container">
 
 <body>
@@ -54,19 +43,22 @@
     </div>
     <div class="row tm-mb-90 tm-gallery">
 
-        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-            <figure class="effect-ming tm-video-item">
-                <img src="img/img-16.jpg" alt="Image" class="img-fluid">
-                <figcaption class="d-flex align-items-center justify-content-center">
-                    <h2>Peace</h2>
-                    <a href="video-detail.html">View more</a>
-                </figcaption>
-            </figure>
+            @foreach($video as $as)
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <figure class="effect-ming tm-video-item">
+
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed" frameborder="0" allowfullscreen></iframe>
+
+                    </iframe>
+            <h3 style="color: #ffffff">{{$as->name}}</h3>
+                </figure>
             <div class="d-flex justify-content-between tm-text-gray">
                 <span>14 Aug 2020</span>
-                <span>21,204 views</span>
             </div>
         </div>
+        @endforeach
+
     </div> <!-- row -->
     <div class="row tm-mb-90">
         <div class="col-12 d-flex justify-content-between align-items-center tm-paging-col">

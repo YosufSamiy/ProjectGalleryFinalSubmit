@@ -1,5 +1,11 @@
-
+@extends('dashboard.layouts.header')
 <div class="container">
+    <div>  <br>
+
+        <br>
+        <br> <br>
+        <br>
+    </div>
 
 <h1 class="text-center">Manage Members</h1>
 <div class="container">
@@ -59,4 +65,3 @@
 </div>
 </div>
 
-@extends('dashboard.layouts.header')
