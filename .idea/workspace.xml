@@ -6,20 +6,15 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e6b4216-f23b-4b03-8cda-927abfa716b9" name="Default Changelist" comment="" />
+    <list default="true" id="5e6b4216-f23b-4b03-8cda-927abfa716b9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/usersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/usersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -243,7 +238,9 @@
       <workItem from="1609098249745" duration="39000" />
       <workItem from="1609192771384" duration="1983000" />
       <workItem from="1609194938671" duration="336000" />
-      <workItem from="1609256258006" duration="1017000" />
+      <workItem from="1609256258006" duration="2242000" />
+      <workItem from="1609258695830" duration="1901000" />
+      <workItem from="1609262654118" duration="538000" />
     </task>
     <servers />
   </component>
@@ -263,6 +260,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="137" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609262495386">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1609262495386" />
     <state x="441" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608753602358">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -275,10 +276,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="102" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1608666804948" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1609098293530">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1609258509892">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1609098293530" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1609258509892" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1609263024674">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1609263024674" />
     <state x="0" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1608933841891">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

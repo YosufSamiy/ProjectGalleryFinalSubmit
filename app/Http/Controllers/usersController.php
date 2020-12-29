@@ -14,18 +14,5 @@ class usersController extends Controller
         $contact=Contact::all();
         dd($contact->toArray());
 
-//        $message ="Welcom to IUG";
-//
-//
-//
-//        $encryptting=encrypt($message);
-//
-//        $decrypting=decrypt($encryptting);
-//        dd($decrypting);
-//
-////
-////        $hasing= Hash::make($message);
-////
-////        dd($hasing);
     }
 }
